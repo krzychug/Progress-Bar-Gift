@@ -1,0 +1,127 @@
+.carekit-widget {
+    background: #F9F8F6;
+    border-radius: .375rem;
+    padding: 10px;
+    margin: 20px 0;
+    font-family: var(--bs-body-font-family);
+}
+
+.carekit-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.carekit-icon {
+    font-size: 36px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.carekit-content {
+    flex: 1;
+}
+
+.carekit-title {
+    font-size: 14px;
+    color: var(--content-text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.carekit-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.carekit-text strong {
+    color: var(--content-text-color);
+    font-weight: 700;
+}
+
+.carekit-progress-wrapper {
+    position: relative;
+}
+
+.carekit-progress-bar {
+    background: var(--bs-gray);
+    border-radius: 0.175rem;
+    height: 8px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.carekit-progress-fill {
+    background: var(--bs-secondary);
+    height: 100%;
+    transition: width 0.6s ease;
+    position: relative;
+    min-width: 0;
+    border-radius: 0;
+}
+
+.carekit-progress-label {
+    margin-top: 6px;
+    color: #616161;
+    font-weight: 700;
+    font-size: 13px;
+    text-shadow: none;
+    white-space: nowrap;
+    padding: 0 12px;
+    text-align: center;
+}
+
+/* Wariant dla modala koszyka */
+#blockcart-modal .carekit-widget {
+    margin: 20px 0 10px 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .carekit-widget {
+        padding: 16px;
+        margin: 16px 0;
+    }
+    
+    .carekit-icon {
+        font-size: 30px;
+    }
+    
+    .carekit-title {
+        font-size: 12px;
+    }
+    
+    .carekit-text {
+        font-size: 14px;
+    }
+    
+    .carekit-progress-bar {
+        height: 15px;
+    }
+    
+    .carekit-progress-label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carekit-header {
+        gap: 12px;
+    }
+    
+    .carekit-icon {
+        font-size: 28px;
+    }
+    
+    .carekit-text {
+        font-size: 13px;
+    }
+    
+    .carekit-progress-label {
+        font-size: 11px;
+    }
+}
